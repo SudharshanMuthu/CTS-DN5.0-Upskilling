@@ -1,1 +1,262 @@
-.class{}
+.extercss{
+    color :aqua;
+}
+/*style using selecter without select*/
+h1{
+    color : violet;
+}
+p{
+    color :aliceblue;
+    background-color: black;
+}
+button{
+    color:blue;
+    background-color:aliceblue;
+}
+/*selector use pana prom . class selectot ku  #id use panuvom * universel selector h2 -element selector h1,,p - group selector */
+*{
+    margin:0;
+    padding:0;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h2{
+    color: blue;
+    text-align: center;
+}
+
+
+#mainHeader{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.eventCard{
+    border: 2px solid black;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+}
+
+h3,p{
+    color: green;
+    font-style: italic;
+}
+
+
+
+body{
+    background-color:#f5f5f5;
+}
+
+/* ID Selector with HEX Color */
+#mainHeader1{
+    background-color:#000080;
+    color:#ffffff;
+    text-align:center;
+    padding:15px;
+}
+
+/* Gradient Background */
+h2{
+    background:linear-gradient(to right,blue,green);
+    color:white;
+    padding:10px;
+}
+
+/* RGBA Color */
+.eventCard1{
+    background-color:rgba(0,255,255,0.4);
+    border:2px solid black;
+    padding:10px;
+    margin:10px;
+}
+
+/* Paragraph Styling */
+p1{
+    color:#333333;
+    background-color:#ffffff;
+    padding:10px;
+}
+
+
+
+header{
+    font-family: Arial;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Sub Heading */
+he{
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Paragraph */
+p5{
+    font-family: Georgia;
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+}
+
+
+/*ex6*/
+a:link{
+    color: blue;
+    text-decoration: none;/*this is use for remove underline in link*/
+}
+/*link mela mouse vacha hover agum*/
+a:hover{
+    color: red;
+}
+/*after link thottone clor marum*/
+a:active{
+    color: green;
+}
+/*already visted link ipdi katum*/
+a:visited{
+    color: purple;
+}
+
+/* List Styles */
+
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/* List Item Spacing */
+
+li{
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/*ex7*/
+/* Table Styling */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid black;
+}
+
+th{
+    background-color:navy;
+    color:white;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background-color:lightgray;
+}
+
+
+/* =========================
+   EXERCISE 8 - BOX MODEL
+========================= */
+
+.eventCardBox{
+    border:2px solid black;
+    padding:20px;
+    margin:20px;
+    background-color:lightblue;
+}
+
+input:focus{
+    outline:3px solid red;
+}
+
+.hiddenBox{
+    visibility:hidden;
+}
+
+.noneBox{
+    display:none;
+}
+
+
+/* =========================
+   EXERCISE 9 - MULTI COLUMN
+========================= */
+
+.newsArticle{
+
+    column-count:2;
+
+    column-gap:30px;
+
+    column-rule:1px solid gray;
+
+    padding:15px;
+}
+
+/* =========================
+   EXERCISE 10 - RESPONSIVE
+========================= */
+
+.responsiveNav a{
+
+    display:inline-block;
+
+    margin:10px;
+
+    text-decoration:none;
+
+    color:black;
+
+    font-weight:bold;
+}
+
+.responsiveImage{
+
+    width:100%;
+
+    max-width:500px;
+}
+
+/* Mobile View */
+
+@media screen and (max-width:768px){
+
+    .responsiveNav a{
+
+        display:block;
+
+        margin:5px;
+    }
+
+    .responsiveImage{
+
+        max-width:250px;
+    }
+
+    h1{
+
+        font-size:20px;
+    }
+
+}
